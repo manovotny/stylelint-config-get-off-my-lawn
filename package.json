@@ -1,0 +1,38 @@
+{
+  "name": "stylelint-config-get-off-my-lawn",
+  "description": "A highly opinionated, sharable config of stylelint rules to produce beautiful, readable CSS.",
+  "version": "0.0.0",
+  "author": {
+    "name": "Michael Novotny",
+    "email": "manovotny@gmail.com",
+    "url": "htts://manovotny.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manovotny/stylelint-config-get-off-my-lawn.git"
+  },
+  "keywords": [
+    "config",
+    "css",
+    "sass",
+    "scss",
+    "stylelint"
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  "main": "index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "eslint . --ext .json --ext .js"
+  },
+  "dependencies": {
+    "stylelint": "7.5.0"
+  },
+  "devDependencies": {
+    "eslint-config-get-off-my-lawn": "1.1.0"
+  }
+}
