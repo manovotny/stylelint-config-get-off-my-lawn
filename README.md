@@ -1,1 +1,1 @@
-# tylelint-config-get-off-my-lawn
+# stylelint-config-get-off-my-lawn
