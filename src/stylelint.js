@@ -2,11 +2,11 @@ module.exports = {
     'at-rule-empty-line-before': [
         'always',
         {
-            'except': [
+            except: [
                 'blockless-group',
                 'first-nested'
             ],
-            'ignore': [
+            ignore: [
                 'after-comment'
             ]
         }
@@ -16,7 +16,7 @@ module.exports = {
     'at-rule-no-unknown': [
         true,
         {
-            'ignoreAtRules': [
+            ignoreAtRules: [
                 'include',
                 'mixin',
                 'placeholder'
@@ -38,10 +38,10 @@ module.exports = {
     'comment-empty-line-before': [
         'always',
         {
-            'except': [
+            except: [
                 'first-nested'
             ],
-            'ignore': [
+            ignore: [
                 'between-comments',
                 'stylelint-commands'
             ]
@@ -75,7 +75,7 @@ module.exports = {
     'font-weight-notation': [
         'named-where-possible',
         {
-            'ignore': [
+            ignore: [
                 'relative'
             ]
         }
@@ -99,7 +99,7 @@ module.exports = {
     'max-nesting-depth': [
         4,
         {
-            'ignore': [
+            ignore: [
                 'at-rules-without-declaration-blocks'
             ]
         }
@@ -134,10 +134,10 @@ module.exports = {
     'rule-nested-empty-line-before': [
         'always',
         {
-            'except': [
+            except: [
                 'first-nested'
             ],
-            'ignore': [
+            ignore: [
                 'after-comment'
             ]
         }
@@ -145,10 +145,10 @@ module.exports = {
     'rule-non-nested-empty-line-before': [
         'always',
         {
-            'except': [
+            except: [
                 'after-single-line-comment'
             ],
-            'ignore': [
+            ignore: [
                 'after-comment'
             ]
         }
@@ -160,7 +160,7 @@ module.exports = {
     'selector-class-pattern': [
         '^[a-z](?:-[a-z\\d]|[a-z\\d])*$',
         {
-            'resolveNestedSelectors': true
+            resolveNestedSelectors: true
         }
     ],
     'selector-combinator-space-after': 'always',
@@ -177,7 +177,7 @@ module.exports = {
     'selector-no-type': [
         true,
         {
-            'ignore': [
+            ignore: [
                 'descendant'
             ]
         }
