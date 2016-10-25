@@ -5,6 +5,9 @@ module.exports = {
             'except': [
                 'blockless-group',
                 'first-nested'
+            ],
+            'ignore': [
+                'after-comment'
             ]
         }
     ],
@@ -144,6 +147,9 @@ module.exports = {
         {
             'except': [
                 'after-single-line-comment'
+            ],
+            'ignore': [
+                'after-comment'
             ]
         }
     ],
