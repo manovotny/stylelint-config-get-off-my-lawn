@@ -1,7 +1,7 @@
 {
   "name": "stylelint-config-get-off-my-lawn",
   "description": "A highly opinionated, sharable config of stylelint rules to produce beautiful, readable CSS and Sass.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Michael Novotny",
     "email": "manovotny@gmail.com",
