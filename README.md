@@ -1,10 +1,10 @@
 # stylelint-config-get-off-my-lawn
 
-> A highly opinionated, [sharable config](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md#extends) of [stylelint](http://stylelint.io) rules to produce beautiful, readable CSS.
+> A highly opinionated, [sharable config](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md#extends) of [stylelint](http://stylelint.io) rules to produce beautiful, readable CSS and Sass.
 
 ![stylelint-config-get-off-my-lawn](assets/logo.jpg)
 
-As developers, we spend more time reading code than writing it. These rules aim to make reading CSS a priority.
+As developers, we spend more time reading code than writing it. These rules aim to make reading CSS and Sass a priority.
 
 That means some rules will feel oppressive or "over the top" for many developers, which is fine. If you don't like it, you can get off my lawn! ... Or extend the rules and override them with the ones that bother you. Either way.
 
