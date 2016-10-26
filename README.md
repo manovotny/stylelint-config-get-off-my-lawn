@@ -44,6 +44,10 @@ module.exports = {
 };
 ```
 
+## Related
+
+* [eslint-config-get-off-my-lawn](https://www.npmjs.com/package/eslint-config-get-off-my-lawn) - A highly opinionated, [sharable config](http://eslint.org/docs/developer-guide/shareable-configs.html) of [ESLint](http://eslint.org) rules to produce beautiful, readable JavaScript.
+
 ## License
 
 MIT © [Michael Novotny](http://manovotny.com)
