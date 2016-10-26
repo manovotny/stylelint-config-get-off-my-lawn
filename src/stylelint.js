@@ -17,9 +17,20 @@ module.exports = {
         true,
         {
             ignoreAtRules: [
+                'at-root',
+                'debug',
+                'each',
+                'error',
+                'extend',
+                'for',
+                'function',
+                'if',
                 'include',
                 'mixin',
-                'placeholder'
+                'placeholder',
+                'return',
+                'warn',
+                'while'
             ]
         }
     ],
