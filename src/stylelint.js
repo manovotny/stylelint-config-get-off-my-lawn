@@ -18,8 +18,10 @@ module.exports = {
         {
             ignoreAtRules: [
                 'at-root',
+                'content',
                 'debug',
                 'each',
+                'else',
                 'error',
                 'extend',
                 'for',
