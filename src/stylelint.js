@@ -3,8 +3,11 @@ module.exports = {
         'always',
         {
             except: [
-                'blockless-group',
-                'first-nested'
+                'after-same-name',
+                'blockless-after-blockless',
+                'blockless-after-same-name-blockless',
+                'first-nested',
+                'inside-block'
             ],
             ignore: [
                 'after-comment'
@@ -38,11 +41,11 @@ module.exports = {
     ],
     'at-rule-no-vendor-prefix': true,
     'at-rule-semicolon-newline-after': 'always',
+    'at-rule-semicolon-space-before': 'never',
     'block-closing-brace-empty-line-before': 'never',
     'block-closing-brace-newline-after': 'always',
     'block-closing-brace-newline-before': 'always',
     'block-no-empty': true,
-    'block-no-single-line': true,
     'block-opening-brace-newline-after': 'always',
     'color-hex-case': 'lower',
     'color-hex-length': 'short',
@@ -55,7 +58,7 @@ module.exports = {
                 'first-nested'
             ],
             ignore: [
-                'between-comments',
+                'after-comment',
                 'stylelint-commands'
             ]
         }
@@ -67,15 +70,12 @@ module.exports = {
     ],
     'custom-media-pattern': '^[a-z][a-z0-9-]+$',
     'custom-property-empty-line-before': 'never',
-    'custom-property-no-outside-root': true,
     'custom-property-pattern': '^[a-z][a-z0-9-]+$',
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
     'declaration-block-no-duplicate-properties': true,
-    'declaration-block-no-ignored-properties': true,
     'declaration-block-no-redundant-longhand-properties': true,
     'declaration-block-no-shorthand-property-overrides': true,
-    'declaration-block-properties-order': 'alphabetical',
     'declaration-block-semicolon-newline-after': 'always',
     'declaration-block-semicolon-space-before': 'never',
     'declaration-block-single-line-max-declarations': 1,
@@ -85,6 +85,7 @@ module.exports = {
     'declaration-empty-line-before': 'never',
     'declaration-no-important': true,
     'font-family-name-quotes': 'always-where-recommended',
+    'font-family-no-duplicate-names': true,
     'font-weight-notation': [
         'named-where-possible',
         {
@@ -113,7 +114,7 @@ module.exports = {
         4,
         {
             ignore: [
-                'at-rules-without-declaration-blocks'
+                'blockless-at-rules'
             ]
         }
     ],
@@ -122,7 +123,6 @@ module.exports = {
     'media-feature-name-case': 'lower',
     'media-feature-name-no-unknown': true,
     'media-feature-name-no-vendor-prefix': true,
-    'media-feature-no-missing-punctuation': true,
     'media-feature-parentheses-space-inside': 'never',
     'media-feature-range-operator-space-after': 'always',
     'media-feature-range-operator-space-before': 'always',
@@ -143,23 +143,12 @@ module.exports = {
     'property-case': 'lower',
     'property-no-unknown': true,
     'property-no-vendor-prefix': true,
-    'root-no-standard-properties': true,
-    'rule-nested-empty-line-before': [
+    'rule-empty-line-before': [
         'always',
         {
             except: [
+                'after-single-line-comment',
                 'first-nested'
-            ],
-            ignore: [
-                'after-comment'
-            ]
-        }
-    ],
-    'rule-non-nested-empty-line-before': [
-        'always',
-        {
-            except: [
-                'after-single-line-comment'
             ],
             ignore: [
                 'after-comment'
@@ -185,12 +174,13 @@ module.exports = {
     'selector-list-comma-space-before': 'never',
     'selector-max-compound-selectors': 4,
     'selector-max-empty-lines': 0,
-    'selector-no-empty': true,
-    'selector-no-id': true,
-    'selector-no-type': [
-        true,
+    'selector-max-id': 0,
+    'selector-max-type': [
+        0,
         {
             ignore: [
+                'child',
+                'compounded',
                 'descendant'
             ]
         }
@@ -202,13 +192,11 @@ module.exports = {
     'selector-pseudo-element-case': 'lower',
     'selector-pseudo-element-colon-notation': 'double',
     'selector-pseudo-element-no-unknown': true,
-    'selector-root-no-composition': true,
     'selector-type-case': 'lower',
     'selector-type-no-unknown': true,
     'shorthand-property-no-redundant-values': true,
     'string-no-newline': true,
     'string-quotes': 'single',
-    'time-no-imperceptible': true,
     'unit-case': 'lower',
     'unit-no-unknown': true,
     'value-keyword-case': 'lower',
