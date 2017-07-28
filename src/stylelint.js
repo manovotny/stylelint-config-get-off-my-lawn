@@ -3,11 +3,8 @@ module.exports = {
         'always',
         {
             except: [
-                'after-same-name',
-                'blockless-after-blockless',
                 'blockless-after-same-name-blockless',
-                'first-nested',
-                'inside-block'
+                'first-nested'
             ],
             ignore: [
                 'after-comment'
