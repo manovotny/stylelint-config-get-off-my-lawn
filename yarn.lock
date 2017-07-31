@@ -405,6 +405,12 @@ css-tokenize@^1.0.1:
     inherits "^2.0.1"
     readable-stream "^1.0.33"
 
+css-tree@1.0.0-alpha16:
+  version "1.0.0-alpha16"
+  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha16.tgz#6cb2cdff6947259dfdaf790626333a862de948b0"
+  dependencies:
+    source-map "^0.5.3"
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -1898,7 +1904,7 @@ source-map@^0.4.2:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@^0.5.6:
+source-map@^0.5.3, source-map@^0.5.6:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 
@@ -2018,6 +2024,13 @@ stylehacks@^2.3.2:
     text-table "^0.2.0"
     write-file-stdout "0.0.2"
 
+stylelint-csstree-validator@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/stylelint-csstree-validator/-/stylelint-csstree-validator-1.1.1.tgz#ed3a1e2c482df50644731fcf557e2dffa9d8dc7f"
+  dependencies:
+    css-tree "1.0.0-alpha16"
+    stylelint "^7.0.0"
+
 stylelint-order@0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-0.6.0.tgz#72222be0c64d8782b2fc237d0d9ac974039f968b"
@@ -2079,7 +2092,7 @@ stylelint@8.0.0, stylelint@^8.0.0:
     svg-tags "^1.0.0"
     table "^4.0.1"
 
-stylelint@^7.0.3:
+stylelint@^7.0.0, stylelint@^7.0.3:
   version "7.13.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-7.13.0.tgz#111f97b6da72e775c80800d6bb6f5f869997785d"
   dependencies:
