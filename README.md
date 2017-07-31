@@ -11,6 +11,7 @@ That means some rules will feel oppressive or "over the top" for many developers
 This config also comes with the following plugins, and corresponding rules, baked in.
 
 * [stylelint](https://www.npmjs.com/package/stylelint)
+* [stylelint-order](https://www.npmjs.com/package/stylelint-order)
 * [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)
 
 Each and every single rule has been meticulously poured over and purposefully hand picked or excluded.
