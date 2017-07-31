@@ -13,29 +13,6 @@ module.exports = {
     ],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always',
-    'at-rule-no-unknown': [
-        true,
-        {
-            ignoreAtRules: [
-                'at-root',
-                'content',
-                'debug',
-                'each',
-                'else',
-                'error',
-                'extend',
-                'for',
-                'function',
-                'if',
-                'include',
-                'mixin',
-                'placeholder',
-                'return',
-                'warn',
-                'while'
-            ]
-        }
-    ],
     'at-rule-no-vendor-prefix': true,
     'at-rule-semicolon-newline-after': 'always',
     'at-rule-semicolon-space-before': 'never',
