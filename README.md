@@ -2,7 +2,7 @@
 
 > A highly opinionated, [sharable config](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md#extends) of [stylelint](http://stylelint.io) rules to produce beautiful, readable CSS and Sass.
 
-![stylelint-config-get-off-my-lawn](assets/logo.jpg)
+![stylelint-config-get-off-my-lawn](.github/logo.jpg)
 
 As developers, we spend more time reading code than writing it. These rules aim to make reading CSS and Sass a priority.
 
@@ -10,9 +10,9 @@ That means some rules will feel oppressive or "over the top" for many developers
 
 This config also comes with the following plugins, and corresponding rules, baked in.
 
-* [stylelint](https://www.npmjs.com/package/stylelint)
-* [stylelint-order](https://www.npmjs.com/package/stylelint-order)
-* [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)
+-   [stylelint](https://www.npmjs.com/package/stylelint)
+-   [stylelint-order](https://www.npmjs.com/package/stylelint-order)
+-   [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)
 
 Each and every single rule has been meticulously poured over and purposefully hand picked or excluded.
 
@@ -30,10 +30,10 @@ Create an stylelint config in your `package.json` or `.stylelintrc.js` file.
 
 ```json
 {
-	"name": "my-awesome-project",
-	"stylelint": {
-		"extends": "stylelint-config-get-off-my-lawn"
-	}
+    "name": "my-awesome-project",
+    "stylelint": {
+        "extends": "stylelint-config-get-off-my-lawn"
+    }
 }
 ```
 
@@ -47,7 +47,7 @@ module.exports = {
 
 ## Related
 
-* [eslint-config-get-off-my-lawn](https://www.npmjs.com/package/eslint-config-get-off-my-lawn) - A highly opinionated, [sharable config](http://eslint.org/docs/developer-guide/shareable-configs.html) of [ESLint](http://eslint.org) rules to produce beautiful, readable JavaScript.
+-   [eslint-config-get-off-my-lawn](https://www.npmjs.com/package/eslint-config-get-off-my-lawn) - A highly opinionated, [sharable config](http://eslint.org/docs/developer-guide/shareable-configs.html) of [ESLint](http://eslint.org) rules to produce beautiful, readable JavaScript.
 
 ## License
 

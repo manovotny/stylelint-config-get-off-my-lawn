@@ -2,13 +2,8 @@ module.exports = {
     'at-rule-empty-line-before': [
         'always',
         {
-            except: [
-                'blockless-after-same-name-blockless',
-                'first-nested'
-            ],
-            ignore: [
-                'after-comment'
-            ]
+            except: ['blockless-after-same-name-blockless', 'first-nested'],
+            ignore: ['after-comment']
         }
     ],
     'at-rule-name-case': 'lower',
@@ -28,20 +23,13 @@ module.exports = {
     'comment-empty-line-before': [
         'always',
         {
-            except: [
-                'first-nested'
-            ],
-            ignore: [
-                'after-comment',
-                'stylelint-commands'
-            ]
+            except: ['first-nested'],
+            ignore: ['after-comment', 'stylelint-commands']
         }
     ],
     'comment-no-empty': true,
     'comment-whitespace-inside': 'always',
-    'comment-word-blacklist': [
-        '/^TODO:/'
-    ],
+    'comment-word-blacklist': ['/^TODO:/'],
     'custom-media-pattern': '^[a-z][a-z0-9-]+$',
     'custom-property-empty-line-before': 'never',
     'custom-property-pattern': '^[a-z][a-z0-9-]+$',
@@ -63,9 +51,7 @@ module.exports = {
     'font-weight-notation': [
         'named-where-possible',
         {
-            ignore: [
-                'relative'
-            ]
+            ignore: ['relative']
         }
     ],
     'function-calc-no-unspaced-operator': true,
@@ -80,16 +66,14 @@ module.exports = {
     'function-parentheses-space-inside': 'never',
     'function-url-quotes': 'always',
     'function-whitespace-after': 'always',
-    'indentation': 4,
+    indentation: 4,
     'keyframe-declaration-no-important': true,
     'length-zero-no-unit': true,
     'max-empty-lines': 1,
     'max-nesting-depth': [
         4,
         {
-            ignore: [
-                'blockless-at-rules'
-            ]
+            ignore: ['blockless-at-rules']
         }
     ],
     'media-feature-colon-space-after': 'always',
@@ -120,13 +104,8 @@ module.exports = {
     'rule-empty-line-before': [
         'always',
         {
-            except: [
-                'after-single-line-comment',
-                'first-nested'
-            ],
-            ignore: [
-                'after-comment'
-            ]
+            except: ['after-single-line-comment', 'first-nested'],
+            ignore: ['after-comment']
         }
     ],
     'selector-attribute-brackets-space-inside': 'never',
@@ -152,11 +131,7 @@ module.exports = {
     'selector-max-type': [
         0,
         {
-            ignore: [
-                'child',
-                'compounded',
-                'descendant'
-            ]
+            ignore: ['child', 'compounded', 'descendant']
         }
     ],
     'selector-no-vendor-prefix': true,
