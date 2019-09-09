@@ -11,24 +11,15 @@ module.exports = {
     'scss/dollar-variable-empty-line-before': [
         'always',
         {
-            except: [
-                'after-comment',
-                'after-dollar-variable',
-                'first-nested'
-            ]
+            except: ['after-comment', 'after-dollar-variable', 'first-nested']
         }
     ],
     'scss/dollar-variable-no-missing-interpolation': true,
     'scss/double-slash-comment-empty-line-before': [
         'always',
         {
-            except: [
-                'first-nested'
-            ],
-            ignore: [
-                'between-comments',
-                'stylelint-commands'
-            ]
+            except: ['first-nested'],
+            ignore: ['between-comments', 'stylelint-commands']
         }
     ],
     'scss/double-slash-comment-whitespace-inside': 'always',

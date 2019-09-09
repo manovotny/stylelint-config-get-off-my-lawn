@@ -1,40 +1,59 @@
 {
-  "name": "stylelint-config-get-off-my-lawn",
-  "description": "A highly opinionated, sharable config of stylelint rules to produce beautiful, readable CSS and Sass.",
-  "version": "2.0.0",
-  "author": {
-    "name": "Michael Novotny",
-    "email": "manovotny@gmail.com",
-    "url": "htts://manovotny.com"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/manovotny/stylelint-config-get-off-my-lawn.git"
-  },
-  "keywords": [
-    "config",
-    "css",
-    "sass",
-    "scss",
-    "stylelint"
-  ],
-  "engines": {
-    "node": ">=6"
-  },
-  "main": "index.js",
-  "files": [
-    "src"
-  ],
-  "scripts": {
-    "test": "eslint . --ext .json --ext .js"
-  },
-  "dependencies": {
-    "stylelint": "8.0.0",
-    "stylelint-order": "0.6.0",
-    "stylelint-scss": "2.0.0"
-  },
-  "devDependencies": {
-    "eslint-config-get-off-my-lawn": "2.1.0"
-  }
+    "name": "stylelint-config-get-off-my-lawn",
+    "description": "A highly opinionated, sharable config of stylelint rules to produce beautiful, readable CSS and Sass.",
+    "version": "2.0.0",
+    "author": {
+        "name": "Michael Novotny",
+        "email": "manovotny@gmail.com",
+        "url": "htts://manovotny.com"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/manovotny/stylelint-config-get-off-my-lawn.git"
+    },
+    "keywords": [
+        "config",
+        "css",
+        "sass",
+        "scss",
+        "stylelint"
+    ],
+    "engines": {
+        "node": ">=8.6.0",
+        "yarn": ">=1.0.0"
+    },
+    "main": "index.js",
+    "files": [
+        "src"
+    ],
+    "scripts": {
+        "lint": "eslint . --ext .js --ext .json",
+        "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
+        "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
+        "test": "yarn lint && yarn prettier:check"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,json,md,yml}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "dependencies": {
+        "stylelint": "8.0.0",
+        "stylelint-order": "0.6.0",
+        "stylelint-scss": "2.0.0"
+    },
+    "devDependencies": {
+        "eslint": "6.2.1",
+        "eslint-config-get-off-my-lawn": "5.0.1",
+        "husky": "3.0.5",
+        "lint-staged": "9.2.5",
+        "prettier": "1.18.2"
+    }
 }
