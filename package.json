@@ -46,7 +46,7 @@
     },
     "dependencies": {
         "stylelint-order": "4.0.0",
-        "stylelint-scss": "2.0.0"
+        "stylelint-scss": "3.16.0"
     },
     "devDependencies": {
         "eslint": "6.2.1",
