@@ -51,6 +51,7 @@
         "stylelint-at-rule-no-debug": "1.0.3",
         "stylelint-config-prettier": "8.0.1",
         "stylelint-order": "4.0.0",
+        "stylelint-react-native": "2.2.0",
         "stylelint-scss": "3.16.0",
         "stylelint-selector-no-empty": "1.0.7"
     },

@@ -4,7 +4,8 @@ const readPkgUp = require('read-pkg-up');
 const atRuleNoChildren = require('./src/at-rule-no-children');
 const atRuleNoDebug = require('./src/at-rule-no-debug');
 const order = require('./src/order');
-const scss = require('./src/stylelint');
+const reactNative = require('./src/react-native');
+const scss = require('./src/scss');
 const selectorNoEmpty = require('./src/selector-no-empty');
 const stylelint = require('./src/stylelint');
 
@@ -35,6 +36,14 @@ if (getUsage('prettier')) {
     config.rules = {
         ...config.rules,
         ...require('stylelint-config-prettier').rules
+    };
+}
+
+if (getUsage('react-native')) {
+    config.plugins.push('stylelint-react-native');
+    config.rules = {
+        ...config.rules,
+        ...reactNative
     };
 }
 
