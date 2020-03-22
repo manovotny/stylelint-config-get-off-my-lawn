@@ -1,6 +1,7 @@
 const dotProp = require('dot-prop');
 const readPkgUp = require('read-pkg-up');
 
+const atChildren = require('./src/at-children');
 const debug = require('./src/debug');
 const order = require('./src/order');
 const scss = require('./src/stylelint');
@@ -12,7 +13,7 @@ const getUsage = (dependency) =>
     dotProp.get(pkg, `package.dependencies.${dependency}`) || dotProp.get(pkg, `package.devDependencies.${dependency}`);
 
 const config = {
-    plugins: ['stylelint-at-rule-no-debug', 'stylelint-order', 'stylelint-scss'],
+    plugins: ['stylelint-at-rule-no-children', 'stylelint-at-rule-no-debug', 'stylelint-order', 'stylelint-scss'],
     rules: {
         ...debug,
         ...order,
