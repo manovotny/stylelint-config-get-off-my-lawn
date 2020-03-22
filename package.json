@@ -47,6 +47,7 @@
     "dependencies": {
         "dot-prop": "5.2.0",
         "read-pkg-up": "7.0.1",
+        "stylelint-at-rule-no-debug": "1.0.3",
         "stylelint-config-prettier": "8.0.1",
         "stylelint-order": "4.0.0",
         "stylelint-scss": "3.16.0"
