@@ -19,6 +19,7 @@ const config = {
     plugins: [
         'stylelint-a11y',
         'stylelint-at-rule-no-children',
+        'stylelint-no-indistinguishable-colors',
         'stylelint-order',
         'stylelint-selector-no-empty',
         'stylelint-scss'
