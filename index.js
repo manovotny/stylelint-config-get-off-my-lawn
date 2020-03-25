@@ -2,7 +2,6 @@ const dotProp = require('dot-prop');
 const readPkgUp = require('read-pkg-up');
 
 const a11y = require('./src/a11y');
-const atRuleNoChildren = require('./src/at-rule-no-children');
 const noIndistinguishableColors = require('./src/no-indistinguishable-colors');
 const order = require('./src/order');
 const reactNative = require('./src/react-native');
@@ -18,7 +17,6 @@ const getUsage = (dependency) =>
 const config = {
     plugins: [
         'stylelint-a11y',
-        'stylelint-at-rule-no-children',
         'stylelint-no-indistinguishable-colors',
         'stylelint-order',
         'stylelint-selector-no-empty',
@@ -26,7 +24,6 @@ const config = {
     ],
     rules: {
         ...a11y,
-        ...atRuleNoChildren,
         ...noIndistinguishableColors,
         ...order,
         ...scss,
