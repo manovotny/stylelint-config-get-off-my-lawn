@@ -1,6 +1,6 @@
 module.exports = {
     'scss/at-each-key-value-single-line': true,
-    'scss/at-else-if-parentheses-space-before': true,
+    'scss/at-else-if-parentheses-space-before': 'always',
     'scss/at-extend-no-missing-placeholder': true,
     'scss/at-function-named-arguments': 'never',
     'scss/at-function-parentheses-space-before': 'never',
@@ -47,7 +47,7 @@ module.exports = {
     'scss/function-color-relative': true,
     'scss/function-quote-no-quoted-strings-inside': true,
     'scss/function-unquote-no-unquoted-strings-inside': true,
-    'scss/map-keys-quotes': true,
+    'scss/map-keys-quotes': 'always',
     'scss/no-duplicate-dollar-variables': true,
     'scss/no-duplicate-mixins': true,
     'scss/no-global-function-names': true,
