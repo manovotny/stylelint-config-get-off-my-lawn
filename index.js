@@ -3,7 +3,6 @@ const readPkgUp = require('read-pkg-up');
 
 const a11y = require('./src/a11y');
 const atRuleNoChildren = require('./src/at-rule-no-children');
-const atRuleNoDebug = require('./src/at-rule-no-debug');
 const noIndistinguishableColors = require('./src/no-indistinguishable-colors');
 const order = require('./src/order');
 const reactNative = require('./src/react-native');
@@ -20,7 +19,6 @@ const config = {
     plugins: [
         'stylelint-a11y',
         'stylelint-at-rule-no-children',
-        'stylelint-at-rule-no-debug',
         'stylelint-order',
         'stylelint-selector-no-empty',
         'stylelint-scss'
@@ -28,7 +26,6 @@ const config = {
     rules: {
         ...a11y,
         ...atRuleNoChildren,
-        ...atRuleNoDebug,
         ...noIndistinguishableColors,
         ...order,
         ...scss,

@@ -4206,14 +4206,6 @@ stylelint-at-rule-no-children@0.3.1:
   resolved "https://registry.yarnpkg.com/stylelint-at-rule-no-children/-/stylelint-at-rule-no-children-0.3.1.tgz#700152f9ddf4c544592e80ffdcb67ff342749e8d"
   integrity sha512-SNXI6r3XSQja4PqKunu1LNzfqTc/qaONnkOW4ey7ONYY3Z4HIgrBF1ctxCITth1az0fRdrUZNixT/NQIROTX1Q==
 
-stylelint-at-rule-no-debug@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/stylelint-at-rule-no-debug/-/stylelint-at-rule-no-debug-1.0.3.tgz#a4721e9586b87ab4d71def6a52582730d80b74b0"
-  integrity sha1-pHIelYa4erTXHe9qUlgnMNgLdLA=
-  dependencies:
-    object-assign "^4.0.1"
-    stylelint ">=3.0.2"
-
 stylelint-config-prettier@8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/stylelint-config-prettier/-/stylelint-config-prettier-8.0.1.tgz#ec7cdd7faabaff52ebfa56c28fed3d995ebb8cab"
@@ -4261,7 +4253,7 @@ stylelint-selector-no-empty@1.0.7:
   dependencies:
     stylelint "^9.2.1"
 
-stylelint@13.2.1, stylelint@>=3.0.2:
+stylelint@13.2.1:
   version "13.2.1"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-13.2.1.tgz#9101fcd70791856530049816ff53d980ecd561df"
   integrity sha512-461ZV4KpUe7pEHHgMOsH4kkjF7qsjkCIMJYOf7QQC4cvgPUJ0z4Nj+ah5fvKl1rzqBqc5EZa6P0nna4CGoJX+A==
