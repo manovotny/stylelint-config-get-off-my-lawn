@@ -3,6 +3,7 @@ const readPkgUp = require('read-pkg-up');
 
 const atRuleNoChildren = require('./src/at-rule-no-children');
 const atRuleNoDebug = require('./src/at-rule-no-debug');
+const noIndistinguishableColors = require('./src/no-indistinguishable-colors');
 const order = require('./src/order');
 const reactNative = require('./src/react-native');
 const scss = require('./src/scss');
@@ -25,6 +26,7 @@ const config = {
     rules: {
         ...atRuleNoChildren,
         ...atRuleNoDebug,
+        ...noIndistinguishableColors,
         ...order,
         ...scss,
         ...selectorNoEmpty,
