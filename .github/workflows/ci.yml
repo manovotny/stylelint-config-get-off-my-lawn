@@ -8,6 +8,7 @@ jobs:
               with:
                   fetch-depth: 1
             - name: Set node version
+              shell: bash -l {0}
               run: nvm install
             - name: Installing dependencies
               run: yarn install --frozen-lockfile
