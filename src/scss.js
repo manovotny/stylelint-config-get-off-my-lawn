@@ -11,6 +11,7 @@ module.exports = {
     'scss/at-mixin-named-arguments': 'never',
     'scss/at-mixin-parentheses-space-before': 'never',
     'scss/at-rule-no-unknown': true,
+    'scss/comment-no-empty': true,
     'scss/declaration-nested-properties': 'never',
     'scss/declaration-nested-properties-no-divided-groups': true,
     'scss/dimension-no-non-numeric-values': true,
