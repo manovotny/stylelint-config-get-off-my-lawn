@@ -102,7 +102,9 @@ module.exports = {
     'no-duplicate-selectors': [
         true,
         {
-            disallowInList: true
+            // Change this to `true` once this issue is fixed.
+            // https://github.com/stylelint/stylelint/issues/4683
+            disallowInList: false
         }
     ],
     'no-empty-first-line': true,
