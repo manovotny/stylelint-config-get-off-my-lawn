@@ -5,7 +5,6 @@ const a11y = require('./src/a11y');
 const noIndistinguishableColors = require('./src/no-indistinguishable-colors');
 const order = require('./src/order');
 const reactNative = require('./src/react-native');
-const scss = require('./src/scss');
 const selectorNoEmpty = require('./src/selector-no-empty');
 const stylelint = require('./src/stylelint');
 
@@ -27,7 +26,6 @@ const config = {
         ...a11y,
         ...noIndistinguishableColors,
         ...order,
-        ...scss,
         ...selectorNoEmpty,
         ...stylelint
     }
