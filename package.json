@@ -59,7 +59,7 @@
         "eslint": "6.2.1",
         "eslint-config-get-off-my-lawn": "5.0.1",
         "husky": "4.2.5",
-        "lint-staged": "10.2.2",
+        "lint-staged": "10.2.7",
         "prettier": "2.0.5",
         "stylelint": "13.4.0"
     },
