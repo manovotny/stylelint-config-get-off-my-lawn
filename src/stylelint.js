@@ -1,4 +1,5 @@
 module.exports = {
+    'alpha-value-notation': 'number',
     'at-rule-empty-line-before': [
         'always',
         {
@@ -21,6 +22,7 @@ module.exports = {
         }
     ],
     'block-opening-brace-newline-after': 'always',
+    'color-function-notation': 'legacy',
     'color-hex-case': 'lower',
     'color-hex-length': 'short',
     'color-named': 'never',
@@ -73,6 +75,7 @@ module.exports = {
     'function-parentheses-space-inside': 'never',
     'function-url-quotes': 'always',
     'function-whitespace-after': 'always',
+    'hue-degree-notation': 'angle',
     indentation: 4,
     'keyframe-declaration-no-important': true,
     'keyframes-name-pattern': '^[a-z][a-z-]+[a-z]$',
