@@ -1,3 +1,6 @@
 module.exports = {
-    'plugin/stylelint-selector-no-empty': true,
+    plugins: ['stylelint-selector-no-empty'],
+    rules: {
+        'plugin/stylelint-selector-no-empty': true,
+    },
 };

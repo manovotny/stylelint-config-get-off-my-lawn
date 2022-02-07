@@ -1,49 +1,24 @@
-const dotProp = require('dot-prop');
-const readPkgUp = require('read-pkg-up');
+const {mergeAndConcat} = require('merge-anything');
 
 const a11y = require('./src/a11y');
 const noIndistinguishableColors = require('./src/no-indistinguishable-colors');
 const order = require('./src/order');
+const prettier = require('./src/prettier');
 const reactNative = require('./src/react-native');
 const selectorNoEmpty = require('./src/selector-no-empty');
 const stylelint = require('./src/stylelint');
 
-const pkg = readPkgUp.sync() || {};
-
-const getUsage = (dependency) =>
-    dotProp.get(pkg, `packageJson.dependencies.${dependency}`) ||
-    dotProp.get(pkg, `packageJson.devDependencies.${dependency}`);
-
-const config = {
-    plugins: [
-        'stylelint-a11y',
-        'stylelint-no-indistinguishable-colors',
-        'stylelint-order',
-        'stylelint-selector-no-empty',
-        'stylelint-scss',
-    ],
-    rules: {
-        ...a11y,
-        ...noIndistinguishableColors,
-        ...order,
-        ...selectorNoEmpty,
-        ...stylelint,
-    },
-};
-
-if (getUsage('prettier')) {
-    config.rules = {
-        ...config.rules,
-        ...require('stylelint-config-prettier').rules,
-    };
-}
-
-if (getUsage('react-native')) {
-    config.plugins.push('stylelint-react-native');
-    config.rules = {
-        ...config.rules,
-        ...reactNative,
-    };
-}
+const config = mergeAndConcat(
+    // Order of these doesn't matter.
+    a11y,
+    noIndistinguishableColors,
+    order,
+    reactNative,
+    selectorNoEmpty,
+    stylelint,
+    // These need to be listed last, and in this order, to override
+    // or modify rules in the various configs above, as needed.
+    prettier
+);
 
 module.exports = config;
