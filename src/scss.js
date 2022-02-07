@@ -11,6 +11,7 @@ module.exports = {
     'scss/at-mixin-named-arguments': 'never',
     'scss/at-mixin-parentheses-space-before': 'never',
     'scss/at-rule-no-unknown': true,
+    'scss/at-use-no-unnamespaced': true,
     'scss/comment-no-empty': true,
     'scss/declaration-nested-properties': 'never',
     'scss/declaration-nested-properties-no-divided-groups': true,
@@ -37,6 +38,7 @@ module.exports = {
         },
     ],
     'scss/dollar-variable-no-missing-interpolation': true,
+    'scss/dollar-variable-no-namespaced-assignment': true,
     'scss/double-slash-comment-empty-line-before': [
         'always',
         {
