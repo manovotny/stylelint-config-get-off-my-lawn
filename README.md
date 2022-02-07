@@ -26,8 +26,16 @@ There are a couple of exceptions to the automatic enable / disable, which we'll 
 
 ## Install
 
+### NPM
+
 ```
-$ yarn add stylelint stylwelint-config-get-off-my-lawn --dev
+$ npm i stylelint stylelint-config-get-off-my-lawn --save-dev
+```
+
+### Yarn
+
+```
+$ yarn add stylelint stylelint-config-get-off-my-lawn --dev
 ```
 
 ## Usage
