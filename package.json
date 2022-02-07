@@ -27,6 +27,7 @@
         "src"
     ],
     "scripts": {
+        "check": "npm-check -u",
         "lint": "eslint . --ext .js --ext .json",
         "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
         "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
@@ -59,6 +60,7 @@
         "eslint-config-get-off-my-lawn": "5.0.1",
         "husky": "4.2.5",
         "lint-staged": "10.2.7",
+        "npm-check": "5.9.2",
         "prettier": "2.0.5",
         "stylelint": "13.5.0"
     },
