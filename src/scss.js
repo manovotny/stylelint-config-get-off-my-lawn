@@ -21,28 +21,28 @@ module.exports = {
         'always',
         {
             except: ['last-nested', 'before-comment', 'before-dollar-variable'],
-            ignore: ['before-comment', 'inside-single-line-block']
-        }
+            ignore: ['before-comment', 'inside-single-line-block'],
+        },
     ],
     'scss/dollar-variable-empty-line-before': [
         'always',
         {
-            except: ['after-comment', 'after-dollar-variable', 'first-nested']
-        }
+            except: ['after-comment', 'after-dollar-variable', 'first-nested'],
+        },
     ],
     'scss/dollar-variable-first-in-block': [
         true,
         {
-            ignore: ['comments', 'imports']
-        }
+            ignore: ['comments', 'imports'],
+        },
     ],
     'scss/dollar-variable-no-missing-interpolation': true,
     'scss/double-slash-comment-empty-line-before': [
         'always',
         {
             except: ['first-nested'],
-            ignore: ['between-comments', 'stylelint-commands']
-        }
+            ignore: ['between-comments', 'stylelint-commands'],
+        },
     ],
     'scss/double-slash-comment-whitespace-inside': 'always',
     'scss/function-color-relative': true,
@@ -56,5 +56,5 @@ module.exports = {
     'scss/operator-no-newline-before': true,
     'scss/operator-no-unspaced': true,
     'scss/selector-no-redundant-nesting-selector': true,
-    'scss/selector-no-union-class-name': true
+    'scss/selector-no-union-class-name': true,
 };

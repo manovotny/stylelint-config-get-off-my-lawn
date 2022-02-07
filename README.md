@@ -51,11 +51,11 @@ Create a [stylelint configuration](https://stylelint.io/user-guide/configure) of
 }
 ```
 
-Additionally, there are a couple of scenarios where stylwelint-config-get-off-my-lawn cannot automatically detect usage. In this case, you will need to us a configuration format that will allow you to import additional rules.
+Additionally, there are a couple of scenarios where stylelint-config-get-off-my-lawn cannot automatically detect usage. In this case, you will need to us a configuration format that will allow you to import additional rules.
 
 #### CSS-inJS
 
-Becuase there are many CSS-in-JS libraries (and new ones created all the time), we cannot automatically or acruarely detect usage, so you'll need to import and add these rules manually.
+Because there are many CSS-in-JS libraries (and new ones created all the time), we cannot automatically or accurately detect usage, so you'll need to import and add these rules manually.
 
 ```js
 const cssInJs = require('stylelint-config-get-off-my-lawn/src/css-in-js');
@@ -63,14 +63,14 @@ const cssInJs = require('stylelint-config-get-off-my-lawn/src/css-in-js');
 module.exports = {
     extends: 'stylelint-config-get-off-my-lawn',
     rules: {
-        ...cssInJs
-    }
+        ...cssInJs,
+    },
 };
 ```
 
 #### Sass / Scss
 
-Becuase there are many ways to add sass and scss to apps, we cannot automatically or acruarely detect usage, so you'll need to import and add these rules manually.
+Because there are many ways to add sass and scss to apps, we cannot automatically or accurately detect usage, so you'll need to import and add these rules manually.
 
 ```js
 const scss = require('stylelint-config-get-off-my-lawn/src/scss');
@@ -78,8 +78,8 @@ const scss = require('stylelint-config-get-off-my-lawn/src/scss');
 module.exports = {
     extends: 'stylelint-config-get-off-my-lawn',
     rules: {
-        ...scss
-    }
+        ...scss,
+    },
 };
 ```
 

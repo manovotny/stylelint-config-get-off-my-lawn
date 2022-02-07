@@ -5,5 +5,5 @@ module.exports = {
     'a11y/no-obsolete-attribute': true,
     'a11y/no-obsolete-element': true,
     'a11y/no-text-align-justify': true,
-    'a11y/selector-pseudo-class-focus': true
+    'a11y/selector-pseudo-class-focus': true,
 };

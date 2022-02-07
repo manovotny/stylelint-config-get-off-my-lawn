@@ -30,18 +30,15 @@
         "check": "npm-check -u",
         "lint": "eslint . --ext .js --ext .json",
         "lint-staged": "lint-staged",
-        "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
-        "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
+        "prettier": "prettier --write --ignore-unknown .",
+        "prettier:check": "prettier --check --ignore-unknown .",
         "test": "npm run lint && npm run prettier:check"
     },
     "git": {
         "pre-commit": "lint-staged"
     },
     "lint-staged": {
-        "*.{js,json,md,yml}": [
-            "prettier --write",
-            "git add"
-        ]
+        "*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
         "dot-prop": "5.2.0",
@@ -60,7 +57,8 @@
         "eslint-config-get-off-my-lawn": "5.0.1",
         "lint-staged": "12.3.3",
         "npm-check": "5.9.2",
-        "prettier": "2.0.5",
+        "prettier": "2.5.1",
+        "prettier-config-get-off-my-lawn": "1.0.0",
         "stylelint": "13.5.0"
     },
     "peerDependencies": {

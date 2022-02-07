@@ -4,8 +4,8 @@ module.exports = {
         'always',
         {
             except: ['blockless-after-same-name-blockless', 'first-nested'],
-            ignore: ['after-comment']
-        }
+            ignore: ['after-comment'],
+        },
     ],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always',
@@ -18,8 +18,8 @@ module.exports = {
     'block-no-empty': [
         true,
         {
-            ignore: ['comments']
-        }
+            ignore: ['comments'],
+        },
     ],
     'block-opening-brace-newline-after': 'always',
     'color-function-notation': 'legacy',
@@ -31,8 +31,8 @@ module.exports = {
         'always',
         {
             except: ['first-nested'],
-            ignore: ['after-comment', 'stylelint-commands']
-        }
+            ignore: ['after-comment', 'stylelint-commands'],
+        },
     ],
     'comment-no-empty': true,
     'comment-whitespace-inside': 'always',
@@ -59,8 +59,8 @@ module.exports = {
     'font-weight-notation': [
         'named-where-possible',
         {
-            ignore: ['relative']
-        }
+            ignore: ['relative'],
+        },
     ],
     'function-calc-no-invalid': true,
     'function-calc-no-unspaced-operator': true,
@@ -86,8 +86,8 @@ module.exports = {
         4,
         {
             ignore: ['blockless-at-rules', 'pseudo-classes'],
-            ignoreAtRules: ['media']
-        }
+            ignoreAtRules: ['media'],
+        },
     ],
     'media-feature-colon-space-after': 'always',
     'media-feature-colon-space-before': 'never',
@@ -107,8 +107,8 @@ module.exports = {
         {
             // Change this to `true` once this issue is fixed.
             // https://github.com/stylelint/stylelint/issues/4683
-            disallowInList: false
-        }
+            disallowInList: false,
+        },
     ],
     'no-empty-first-line': true,
     'no-empty-source': true,
@@ -127,8 +127,8 @@ module.exports = {
         'always',
         {
             except: ['after-single-line-comment', 'first-nested'],
-            ignore: ['after-comment']
-        }
+            ignore: ['after-comment'],
+        },
     ],
     'selector-attribute-brackets-space-inside': 'never',
     'selector-attribute-operator-space-after': 'never',
@@ -137,8 +137,8 @@ module.exports = {
     'selector-class-pattern': [
         '^[a-z](?:-[a-z\\d]|[a-z\\d])*$',
         {
-            resolveNestedSelectors: true
-        }
+            resolveNestedSelectors: true,
+        },
     ],
     'selector-combinator-space-after': 'always',
     'selector-combinator-space-before': 'always',
@@ -153,8 +153,8 @@ module.exports = {
     'selector-max-type': [
         0,
         {
-            ignore: ['child', 'compounded', 'descendant', 'next-sibling']
-        }
+            ignore: ['child', 'compounded', 'descendant', 'next-sibling'],
+        },
     ],
     'selector-no-vendor-prefix': true,
     'selector-pseudo-class-case': 'lower',
@@ -177,5 +177,5 @@ module.exports = {
     'value-list-comma-space-after': 'always',
     'value-list-comma-space-before': 'never',
     'value-list-max-empty-lines': 0,
-    'value-no-vendor-prefix': true
+    'value-no-vendor-prefix': true,
 };

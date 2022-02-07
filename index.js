@@ -20,21 +20,21 @@ const config = {
         'stylelint-no-indistinguishable-colors',
         'stylelint-order',
         'stylelint-selector-no-empty',
-        'stylelint-scss'
+        'stylelint-scss',
     ],
     rules: {
         ...a11y,
         ...noIndistinguishableColors,
         ...order,
         ...selectorNoEmpty,
-        ...stylelint
-    }
+        ...stylelint,
+    },
 };
 
 if (getUsage('prettier')) {
     config.rules = {
         ...config.rules,
-        ...require('stylelint-config-prettier').rules
+        ...require('stylelint-config-prettier').rules,
     };
 }
 
@@ -42,7 +42,7 @@ if (getUsage('react-native')) {
     config.plugins.push('stylelint-react-native');
     config.rules = {
         ...config.rules,
-        ...reactNative
+        ...reactNative,
     };
 }
 
