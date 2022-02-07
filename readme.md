@@ -1,6 +1,6 @@
 # stylelint-config-get-off-my-lawn
 
-> A highly opinionated, [sharable config](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md#extends) of [stylelint](http://stylelint.io) rules to produce beautiful, readable CSS and Sass.
+> A highly opinionated, [sharable config](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md#extends) of [stylelint](http://stylelint.io) rules to produce beautiful, readable styles.
 
 ![stylelint-config-get-off-my-lawn](.github/logo.jpg)
 

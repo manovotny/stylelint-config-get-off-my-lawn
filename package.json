@@ -1,11 +1,11 @@
 {
     "name": "stylelint-config-get-off-my-lawn",
-    "description": "A highly opinionated, sharable config of stylelint rules to produce beautiful, readable CSS and Sass.",
+    "description": "A highly opinionated, sharable config of stylelint rules to produce beautiful, readable styles.",
     "version": "2.0.0",
     "author": {
         "name": "Michael Novotny",
         "email": "manovotny@gmail.com",
-        "url": "htts://manovotny.com"
+        "url": "https://manovotny.com"
     },
     "license": "MIT",
     "repository": {
