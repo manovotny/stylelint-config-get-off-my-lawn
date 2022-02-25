@@ -13,6 +13,7 @@ This config also comes with the following plugins, and corresponding rules, bake
 -   [stylelint](https://www.npmjs.com/package/stylelint)
 -   [stylelint-a11y](https://www.npmjs.com/package/stylelint-a11y)
 -   [stylelint-at-rule-no-children](https://www.npmjs.com/package/stylelint-at-rule-no-children)
+-   [stylelint-declaration-block-no-ignored-properties](https://www.npmjs.com/package/stylelint-declaration-block-no-ignored-properties)
 -   [stylelint-high-performance-animation](https://www.npmjs.com/package/stylelint-high-performance-animation)
 -   [stylelint-no-indistinguishable-colors](https://www.npmjs.com/package/stylelint-no-indistinguishable-colors)
 -   [stylelint-order](https://www.npmjs.com/package/stylelint-order)
