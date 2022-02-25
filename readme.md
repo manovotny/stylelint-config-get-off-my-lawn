@@ -12,6 +12,7 @@ This config also comes with the following plugins, and corresponding rules, bake
 
 -   [stylelint](https://www.npmjs.com/package/stylelint)
 -   [stylelint-a11y](https://www.npmjs.com/package/stylelint-a11y)
+-   [stylelint-high-performance-animation](https://www.npmjs.com/package/stylelint-high-performance-animation)
 -   [stylelint-no-indistinguishable-colors](https://www.npmjs.com/package/stylelint-no-indistinguishable-colors)
 -   [stylelint-order](https://www.npmjs.com/package/stylelint-order)
 -   [stylelint-react-native](https://www.npmjs.com/package/stylelint-react-native)
