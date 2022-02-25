@@ -42,7 +42,7 @@
         "*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
-        "fs-extra": "10.0.0",
+        "fs-extra": "10.0.1",
         "merge-anything": "4.0.5",
         "stylelint-a11y": "1.2.3",
         "stylelint-at-rule-no-children": "0.3.1",
@@ -59,8 +59,8 @@
     "devDependencies": {
         "@vercel/git-hooks": "1.0.0",
         "eslint": "8.7.0",
-        "eslint-config-get-off-my-lawn": "7.0.0",
-        "lint-staged": "12.3.3",
+        "eslint-config-get-off-my-lawn": "7.0.2",
+        "lint-staged": "12.3.4",
         "npm-check": "5.9.2",
         "prettier": "2.5.1",
         "prettier-config-get-off-my-lawn": "1.0.0",
