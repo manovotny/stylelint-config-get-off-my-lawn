@@ -28,11 +28,11 @@
     ],
     "scripts": {
         "check": "npm-check -u",
-        "lint": "eslint . --ext .js --ext .json",
+        "lint": "eslint . --ext .js,.json",
         "lint-staged": "lint-staged",
         "prettier": "prettier --write --ignore-unknown .",
         "prettier:check": "prettier --check --ignore-unknown .",
-        "start": "node index.js",
+        "start": "stylelint \"**/*.css\"",
         "test": "npm run lint && npm run prettier:check"
     },
     "git": {
