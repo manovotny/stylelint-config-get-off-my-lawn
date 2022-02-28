@@ -28,11 +28,12 @@
     ],
     "scripts": {
         "check": "npm-check -u",
-        "lint": "eslint . --ext .js,.json",
+        "lint": "npm run lint:js && npm run lint:css",
+        "lint:css": "stylelint \"**/*.css\"",
+        "lint:js": "eslint . --ext .js,.json",
         "lint-staged": "lint-staged",
         "prettier": "prettier --write --ignore-unknown .",
         "prettier:check": "prettier --check --ignore-unknown .",
-        "start": "stylelint \"**/*.css\"",
         "test": "npm run lint && npm run prettier:check"
     },
     "git": {
@@ -46,6 +47,7 @@
         "merge-anything": "4.0.5",
         "stylelint-at-rule-no-children": "0.3.1",
         "stylelint-config-prettier": "9.0.3",
+        "stylelint-css-modules-no-global-scoped-selector": "1.0.2",
         "stylelint-declaration-block-no-ignored-properties": "2.5.0",
         "stylelint-high-performance-animation": "1.6.0",
         "stylelint-no-nested-media": "0.1.0",
