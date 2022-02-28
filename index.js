@@ -3,6 +3,7 @@ const {mergeAndConcat} = require('merge-anything');
 // const a11y = require('./src/a11y');
 // const noIndistinguishableColors = require('./src/no-indistinguishable-colors');
 const cssModulesNoGlobalScopedSelector = require('./src/css-modules-no-global-scoped-selector');
+const noUnsupportedBrowserFeatures = require('./src/no-unsupported-browser-features');
 const order = require('./src/order');
 const prettier = require('./src/prettier');
 const reactNative = require('./src/react-native');
@@ -14,6 +15,7 @@ const config = mergeAndConcat(
     // a11y,
     // noIndistinguishableColors,
     cssModulesNoGlobalScopedSelector,
+    noUnsupportedBrowserFeatures,
     order,
     reactNative,
     selectorNoEmpty,

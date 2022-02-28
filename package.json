@@ -55,6 +55,7 @@
         "stylelint-declaration-block-no-ignored-properties": "2.5.0",
         "stylelint-high-performance-animation": "1.6.0",
         "stylelint-no-nested-media": "0.1.0",
+        "stylelint-no-unsupported-browser-features": "5.0.3",
         "stylelint-order": "5.0.0",
         "stylelint-react-native": "2.4.0",
         "stylelint-scss": "4.1.0",
