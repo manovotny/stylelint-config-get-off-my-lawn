@@ -15,9 +15,13 @@
     "keywords": [
         "config",
         "css",
+        "lint",
+        "linter",
         "sass",
         "scss",
-        "stylelint"
+        "stylelint",
+        "stylelint-config",
+        "stylelint-plugin"
     ],
     "engines": {
         "node": ">=12.20.0"
