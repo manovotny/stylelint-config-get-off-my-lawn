@@ -47,6 +47,7 @@
         "*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
+        "@ronilaukkarinen/stylelint-a11y": "1.2.4",
         "fs-extra": "10.0.1",
         "merge-anything": "4.0.5",
         "stylelint-at-rule-no-children": "0.3.1",

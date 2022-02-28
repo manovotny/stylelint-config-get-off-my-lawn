@@ -1,5 +1,5 @@
 module.exports = {
-    plugins: ['stylelint-a11y'],
+    plugins: ['@ronilaukkarinen/stylelint-a11y'],
     rules: {
         'a11y/content-property-no-static-value': true,
         'a11y/font-size-is-readable': true,
