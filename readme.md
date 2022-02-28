@@ -15,7 +15,6 @@ This config also comes with the following plugins, and corresponding rules, bake
 -   [stylelint-at-rule-no-children](https://www.npmjs.com/package/stylelint-at-rule-no-children)
 -   [stylelint-declaration-block-no-ignored-properties](https://www.npmjs.com/package/stylelint-declaration-block-no-ignored-properties)
 -   [stylelint-high-performance-animation](https://www.npmjs.com/package/stylelint-high-performance-animation)
--   [stylelint-no-indistinguishable-colors](https://www.npmjs.com/package/stylelint-no-indistinguishable-colors)
 -   [stylelint-no-nested-media](https://www.npmjs.com/package/stylelint-no-nested-media)
 -   [stylelint-order](https://www.npmjs.com/package/stylelint-order)
 -   [stylelint-react-native](https://www.npmjs.com/package/stylelint-react-native)
