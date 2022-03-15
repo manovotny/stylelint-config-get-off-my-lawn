@@ -1,11 +1,11 @@
 {
     "name": "stylelint-config-get-off-my-lawn",
-    "description": "A highly opinionated, sharable config of stylelint rules to produce beautiful, readable CSS and Sass.",
+    "description": "A highly opinionated, sharable config of stylelint rules to produce beautiful, readable styles.",
     "version": "2.0.0",
     "author": {
         "name": "Michael Novotny",
         "email": "manovotny@gmail.com",
-        "url": "htts://manovotny.com"
+        "url": "https://manovotny.com"
     },
     "license": "MIT",
     "repository": {
@@ -15,45 +15,64 @@
     "keywords": [
         "config",
         "css",
+        "lint",
+        "linter",
         "sass",
         "scss",
-        "stylelint"
+        "stylelint",
+        "stylelint-config",
+        "stylelint-plugin"
     ],
     "engines": {
-        "node": ">=8.6.0",
-        "yarn": ">=1.0.0"
+        "node": ">=12.20.0"
     },
     "main": "index.js",
     "files": [
         "src"
     ],
     "scripts": {
-        "lint": "eslint . --ext .js --ext .json",
-        "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
-        "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
-        "test": "yarn lint && yarn prettier:check"
+        "check": "npm-check -u",
+        "lint": "npm run lint:js && npm run lint:css",
+        "lint:css": "stylelint \"**/*.css\"",
+        "lint:js": "eslint . --ext .js,.json",
+        "lint-staged": "lint-staged",
+        "prettier": "prettier --write --ignore-unknown .",
+        "prettier:check": "prettier --check --ignore-unknown .",
+        "test": "npm run lint && npm run prettier:check"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
+    "git": {
+        "pre-commit": "lint-staged"
     },
     "lint-staged": {
-        "*.{js,json,md,yml}": [
-            "prettier --write",
-            "git add"
-        ]
+        "*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
-        "stylelint": "8.0.0",
-        "stylelint-order": "0.6.0",
-        "stylelint-scss": "2.0.0"
+        "@ronilaukkarinen/stylelint-a11y": "1.2.4",
+        "fs-extra": "10.0.1",
+        "merge-anything": "4.0.5",
+        "stylelint-at-rule-no-children": "0.3.1",
+        "stylelint-config-prettier": "9.0.3",
+        "stylelint-css-modules-no-global-scoped-selector": "1.0.2",
+        "stylelint-declaration-block-no-ignored-properties": "2.5.0",
+        "stylelint-high-performance-animation": "1.6.0",
+        "stylelint-no-nested-media": "0.1.0",
+        "stylelint-no-unsupported-browser-features": "5.0.3",
+        "stylelint-order": "5.0.0",
+        "stylelint-react-native": "2.4.0",
+        "stylelint-scss": "4.1.0",
+        "stylelint-selector-no-empty": "1.0.8"
     },
     "devDependencies": {
-        "eslint": "6.2.1",
-        "eslint-config-get-off-my-lawn": "5.0.1",
-        "husky": "3.0.5",
-        "lint-staged": "9.2.5",
-        "prettier": "1.18.2"
+        "@vercel/git-hooks": "1.0.0",
+        "eslint": "8.7.0",
+        "eslint-config-get-off-my-lawn": "7.0.2",
+        "lint-staged": "12.3.4",
+        "npm-check": "5.9.2",
+        "prettier": "2.5.1",
+        "prettier-config-get-off-my-lawn": "1.0.0",
+        "stylelint": "14.5.3"
+    },
+    "peerDependencies": {
+        "stylelint": ">=14.5.3"
     }
 }
